@@ -1,0 +1,7 @@
+mixin hotspot (title, content, placementClass)
+    .desk__hotspot
+        .desk__hotspot--toggle
+        .desk__hotspot--content(class=placementClass)
+            h3(class='desk__hotspot--content-title')=title
+            p(class='desk__hotspot--content-body')=content
+            span.desk__hotspot--closingIcon
