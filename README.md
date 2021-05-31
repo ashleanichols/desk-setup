@@ -10,7 +10,7 @@ I've configured an environment that handles Pug/SCSS/JS in order to work as quic
 
 ### ▶️ Demo
 
-[https://desk-setup.netlify.app/](https://desk-setup.netlify.app/)
+[https://desksetup.vercel.app/](https://desksetup.vercel.app/)
 
 ## :sparkles: Features
 
@@ -22,4 +22,13 @@ I've configured an environment that handles Pug/SCSS/JS in order to work as quic
 -   [SCSS](https://sass-lang.com/)
 -   [jQuery](https://jquery.com/)
 -   [Gulp](https://gulpjs.com/)
--   A lot of gulp plugins in order to have an environment that handles Pug/SCSS/JS, hot reload, [purgeCSS](https://purgecss.com/), CSS/JS minifier etc.
+
+## Gulp plugins
+
+-   [Autoprefixer](https://github.com/postcss/autoprefixer) Write CSS rules without vendor prefixes.
+-   [BrowserSync](https://github.com/browsersync/browser-sync) Keep multiple browsers in sync after file save.
+-   [Concat](https://github.com/contra/gulp-concat) Concatenates .js files into bundle.js.
+-   [Imagemin](https://github.com/sindresorhus/gulp-imagemin) Minify PNG, JPEG, GIF and SVG images.
+-   [Plumber](https://github.com/floatdrop/gulp-plumber) Prevent pipe breaking caused by errors from gulp plugins.
+-   [Pug](https://github.com/pugjs/gulp-pug) Compile your Pug templates into HTML.
+-   [SASS](https://github.com/dlmanning/gulp-sass) Compile your SASS or SCSS into CSS.
