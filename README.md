@@ -1,4 +1,4 @@
-![Image of Desk Setup Project](https://cdn.jsdelivr.net/gh/Th3Wall/assets-cdn/DeskSetup/DeskSetup_readme.png?t=2)
+![Image of Desk Setup Project](https://cdn.jsdelivr.net/gh/Th3Wall/assets-cdn/DeskSetup/DeskSetup_readme_V2.png)
 
 # Desk Setup
 
