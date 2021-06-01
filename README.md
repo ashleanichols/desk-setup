@@ -1,4 +1,4 @@
-![Image of Desk Setup Project](https://cdn.jsdelivr.net/gh/Th3Wall/assets-cdn/DeskSetup/DeskSetup_readme_V2.png)
+![Image of Desk Setup Project](https://github.com/Th3Wall/assets-cdn/blob/main/DeskSetup/DeskSetup_readme_V2.png)
 
 # Desk Setup
 
@@ -6,7 +6,7 @@ An idea born from a friend of mine and his website re-branding in which he wante
 
 ## 🎯 About
 
-I've configured an environment that handles Pug/SCSS/JS in order to work as quick as possible on this tool that I will adopt also for my personal website in the near future (🤫 Shhht! Spoiler!).
+I've configured an environment that handles Pug/SCSS/JS in order to work as quick as possible on this tool that I will adopt also for my personal website in the near future (🤫 Shhht! Spoiler!)
 
 ### ▶️ Demo
 
