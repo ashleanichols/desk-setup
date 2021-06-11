@@ -23,6 +23,7 @@
     "gulp-pug": "^4.0.1",
     "gulp-purgecss": "^2.2.0",
     "gulp-sass": "^4.1.0",
-    "gulp-terser": "^1.2.0"
+    "gulp-terser": "^1.2.0",
+    "mathsass": "^0.11.0"
   }
 }

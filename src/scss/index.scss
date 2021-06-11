@@ -1,4 +1,5 @@
 @import "variables";
+@import "./mixins/retrowave.scss";
 
 body {
     margin: 0;
@@ -15,6 +16,10 @@ body {
     align-items: center;
     justify-content: center;
     color: $white;
+}
+
+#root {
+    z-index: 3;
 }
 
 .desk-img__wrp {

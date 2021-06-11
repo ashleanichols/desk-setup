@@ -1,0 +1,483 @@
+@import "node_modules/mathsass/dist/math";
+
+.app {
+	overflow: hidden;
+	position: absolute;
+	top: 0%;
+	left: 0%;
+	width: 100%;
+	height: 100%;
+	z-index: 0;
+
+	.sky {
+		position: relative;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 50%;
+
+		.background-left {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 50%;
+			height: 100%;
+			background: linear-gradient(135deg, $sky-color-gradient);
+		}
+
+		.background-right {
+			position: absolute;
+			top: 0;
+			left: 50%;
+			width: 50%;
+			height: 100%;
+			background: linear-gradient(-135deg, $sky-color-gradient);
+		}
+
+		.sun {
+			position: absolute;
+			bottom: 30%;
+			left: calc(50% - 10vw);
+			width: 20vw;
+			height: 20vw;
+			border-radius: 50%;
+			background: linear-gradient(to bottom, $sun-color-gradient);
+		}
+
+		.buildings {
+			.building {
+				position: absolute;
+				bottom: 0;
+				border: solid 1px $building-border;
+				border-bottom: 0;
+				box-shadow: 0 -1vw 10vw $building-shadow;
+
+				.top {
+					position: absolute;
+					bottom: 100%;
+					border: solid 1px $building-border;
+					border-bottom: 0;
+				}
+			}
+
+			.building-1 {
+				left: 11vw;
+				@include rectangle(8vw, 2vw, $building-color1);
+
+				.top {
+					left: 10%;
+					@include rectangle(60%, 8%, $building-color1);
+				}
+			}
+
+			.building-2 {
+				left: 18vw;
+				@include rectangle(7vw, 3vw, $building-color1);
+
+				.top {
+					left: 40%;
+					@include rectangle(50%, 3%, $building-color1);
+				}
+			}
+
+			.building-3 {
+				left: 34vw;
+				@include rectangle(9vw, 6vw, $building-color1);
+
+				.top {
+					left: 20%;
+					@include rectangle(60%, 3%, $building-color1);
+				}
+			}
+
+			.building-4 {
+				left: 28vw;
+				@include rectangle(10vw, 4vw, $building-color1);
+
+				.top {
+					left: 40%;
+					@include rectangle(40%, 2%, $building-color1);
+				}
+			}
+
+			.building-5 {
+				left: 46vw;
+				@include rectangle(3.5vw, 17vw, $building-color1);
+
+				.top {
+					left: 3%;
+					@include rectangle(75%, 2%, $building-color1);
+				}
+			}
+
+			.building-6 {
+				left: 55vw;
+				@include rectangle(2vw, 9vw, $building-color1);
+
+				.top {
+					left: 10%;
+					@include rectangle(60%, 2%, $building-color1);
+				}
+			}
+
+			.building-7 {
+				left: 53vw;
+				@include rectangle(3vw, 7vw, $building-color1);
+
+				.top {
+					left: 12%;
+					@include rectangle(80%, 3%, $building-color1);
+				}
+			}
+
+			.building-8 {
+				left: 54vw;
+				@include rectangle(9vw, 3vw, $building-color1);
+
+				.top {
+					left: 10%;
+					@include rectangle(60%, 6%, $building-color1);
+				}
+			}
+
+			.building-9 {
+				left: 65vw;
+				@include rectangle(11vw, 2vw, $building-color1);
+
+				.top {
+					left: 1%;
+					@include rectangle(90%, 6%, $building-color1);
+				}
+			}
+
+			.building-10 {
+				left: 78vw;
+				@include rectangle(2vw, 5vw, $building-color1);
+
+				.top {
+					left: 10%;
+					@include rectangle(60%, 3%, $building-color1);
+				}
+			}
+
+			.building-11 {
+				left: 21vw;
+				@include rectangle(8vw, 1.5vw, $building-color2);
+
+				.top {
+					left: 10%;
+					@include rectangle(60%, 8%, $building-color2);
+				}
+			}
+
+			.building-12 {
+				left: 42vw;
+				@include rectangle(5vw, 2vw, $building-color2);
+
+				.top {
+					left: 40%;
+					@include rectangle(50%, 4%, $building-color2);
+				}
+			}
+
+			.building-13 {
+				left: 49vw;
+				@include rectangle(5vw, 3vw, $building-color2);
+
+				.top {
+					left: 20%;
+					@include rectangle(60%, 5%, $building-color2);
+				}
+			}
+
+			.building-14 {
+				left: 62vw;
+				@include rectangle(4vw, 0.5vw, $building-color2);
+
+				.top {
+					left: 10%;
+					@include rectangle(40%, 40%, $building-color2);
+				}
+			}
+
+			.building-15 {
+				left: 75vw;
+				@include rectangle(3.5vw, 1vw, $building-color2);
+
+				.top {
+					left: 50%;
+					@include rectangle(40%, 15%, $building-color2);
+				}
+			}
+
+			.building-21 {
+				left: 38vw;
+				@include rectangle(4vw, 12vw, $building-color3);
+
+				.top {
+					left: 10%;
+					@include rectangle(60%, 2%, $building-color3);
+				}
+			}
+
+			.building-22 {
+				left: 36vw;
+				@include rectangle(3vw, 10vw, $building-color3);
+
+				.top {
+					left: 40%;
+					@include rectangle(50%, 1%, $building-color3);
+				}
+			}
+
+			.building-23 {
+				left: 41vw;
+				@include rectangle(5vw, 8vw, $building-color3);
+
+				.top {
+					left: 5%;
+					@include rectangle(80%, 2%, $building-color3);
+				}
+			}
+
+			.building-24 {
+				left: 48.5vw;
+				@include rectangle(4vw, 19vw, $building-color3);
+
+				.top {
+					left: 40%;
+					@include rectangle(40%, 1%, $building-color3);
+				}
+			}
+
+			.building-25 {
+				left: 52vw;
+				@include rectangle(14vw, 4vw, $building-color3);
+
+				.top {
+					left: 50%;
+					@include rectangle(40%, 3%, $building-color3);
+				}
+			}
+		}
+	}
+
+	.ground {
+		z-index: -1;
+		position: absolute;
+		top: 50%;
+		left: 0%;
+		width: 100%;
+		height: 50%;
+		background: linear-gradient(to bottom, $ground-color-gradient);
+
+		// ROAD
+		$angle: 20deg;
+		$time-road: 4s;
+
+		.road {
+			z-index: 2;
+			position: absolute;
+			top: 0;
+			left: 50%;
+			transform-origin: top left;
+		}
+
+		.road.left,
+		.road.right {
+			width: 1px;
+			height: 200%;
+			background-color: $road-color;
+		}
+
+		.road.left {
+			transform: rotate($angle);
+		}
+
+		.road.right {
+			transform: rotate(-$angle);
+		}
+
+		.road.left.bis {
+			transform: rotate($angle - 0.85deg);
+		}
+
+		.road.right.bis {
+			transform: rotate(-$angle + 0.85deg);
+		}
+
+		.road.center {
+			width: 2px;
+			height: 0;
+			border: solid 1px $road-color;
+			animation: infinite road-animation $time-road cubic-bezier(1, 0.01, 1, 0.9);
+		}
+
+		.road.center.road-0 {
+			animation-delay: -$time-road/6 * 1;
+		}
+
+		.road.center.road-1 {
+			animation-delay: -$time-road/6 * 2;
+		}
+
+		.road.center.road-2 {
+			animation-delay: -$time-road/6 * 3;
+		}
+
+		.road.center.road-3 {
+			animation-delay: -$time-road/6 * 4;
+		}
+
+		.road.center.road-4 {
+			animation-delay: -$time-road/6 * 5;
+		}
+
+		.road.center.road-5 {
+			animation-delay: -$time-road/6 * 6;
+		}
+
+		// WAVE
+		.wave {
+			background: $wave-color;
+			box-shadow: 0 1px 10px 1px $wave-color;
+		}
+
+		// WAVE - vertical
+		.wave.vertical {
+			position: absolute;
+			top: 0;
+			left: 50%;
+			width: 1px;
+			height: 1000%;
+			transform-origin: top left;
+		}
+
+		.wave.vertical.right.wave-0 {
+			transform: rotate(-$angle * 1.9);
+		}
+
+		.wave.vertical.right.wave-1 {
+			transform: rotate(-$angle * 2.6);
+		}
+
+		.wave.vertical.right.wave-2 {
+			transform: rotate(-$angle * 3.15);
+		}
+
+		.wave.vertical.right.wave-3 {
+			transform: rotate(-$angle * 3.6);
+		}
+
+		.wave.vertical.right.wave-4 {
+			transform: rotate(-$angle * 3.975);
+		}
+
+		.wave.vertical.right.wave-5 {
+			transform: rotate(-$angle * 4.225);
+		}
+
+		.wave.vertical.left.wave-0 {
+			transform: rotate($angle * 1.9);
+		}
+
+		.wave.vertical.left.wave-1 {
+			transform: rotate($angle * 2.6);
+		}
+
+		.wave.vertical.left.wave-2 {
+			transform: rotate($angle * 3.15);
+		}
+
+		.wave.vertical.left.wave-3 {
+			transform: rotate($angle * 3.6);
+		}
+
+		.wave.vertical.left.wave-4 {
+			transform: rotate($angle * 3.975);
+		}
+
+		.wave.vertical.left.wave-5 {
+			transform: rotate($angle * 4.225);
+		}
+
+		// WAVE - horizontal
+		$time-wave: 9s;
+
+		.wave.horizontal {
+			position: absolute;
+			top: 0;
+			width: 100%;
+			height: 1px;
+		}
+
+		.wave.horizontal.left {
+			right: 50%;
+			animation: infinite wave-left $time-wave cubic-bezier(1, 0.01, 1, 0.9);
+		}
+
+		.wave.horizontal.right {
+			left: calc(50% + 2px);
+			animation: infinite wave-right $time-wave cubic-bezier(1, 0.01, 1, 0.9);
+		}
+
+		.wave.horizontal.wave-10 {
+			animation-delay: -$time-wave/10 * 1;
+		}
+
+		.wave.horizontal.wave-11 {
+			animation-delay: -$time-wave/10 * 2;
+		}
+
+		.wave.horizontal.wave-12 {
+			animation-delay: -$time-wave/10 * 3;
+		}
+
+		.wave.horizontal.wave-13 {
+			animation-delay: -$time-wave/10 * 4;
+		}
+
+		.wave.horizontal.wave-14 {
+			animation-delay: -$time-wave/10 * 5;
+		}
+
+		.wave.horizontal.wave-15 {
+			animation-delay: -$time-wave/10 * 6;
+		}
+
+		.wave.horizontal.wave-16 {
+			animation-delay: -$time-wave/10 * 7;
+		}
+
+		.wave.horizontal.wave-17 {
+			animation-delay: -$time-wave/10 * 8;
+		}
+
+		.wave.horizontal.wave-18 {
+			animation-delay: -$time-wave/10 * 9;
+		}
+
+		.wave.horizontal.wave-19 {
+			animation-delay: -$time-wave/10 * 10;
+		}
+	}
+}
+
+@keyframes wave-left {
+	100% {
+		transform: translate(sin(20deg) / cos(20deg) * (-65vh), 65vh);
+	}
+}
+
+@keyframes wave-right {
+	100% {
+		transform: translate(sin(20deg) / cos(20deg) * (65vh), 65vh);
+	}
+}
+
+@keyframes road-animation {
+	100% {
+		transform: translate(0, 65vh);
+		height: 9vh;
+	}
+}

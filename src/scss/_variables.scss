@@ -2,10 +2,36 @@
 
 $main-font: "Quicksand", sans-serif;
 
-$white: #ffffff;
-$black: #000000;
-$bg-color: #282c34;
+$white:     #ffffff;
+$black:     #000000;
+$yellow: 	#FFFC3A;
+$red: 		#FA1ABB;
+$cyan: 		#19EEFE;
+$blue: 		#161256;
+$pink: 		#F556FB;
+
+$bg-color:        #282c34;
 $gradient-stop-1: #4158d0;
 $gradient-stop-2: #c850c0;
 $gradient-stop-3: #ffcc70;
+
+$building-color1: darken($pink, 60%);
+$building-color2: darken($pink, 56%);
+$building-color3: darken($pink, 52%);
+$building-border: lighten($pink, 15%);
+$building-shadow: $pink;
+
+$sky-color-gradient: black, $blue 30%, $pink;
+$sun-color-gradient: $yellow, $red;
+
+$ground-color-gradient: $blue, black;
+$road-color: lighten($pink, 15%);
+$wave-color: $cyan;
+
 $bezier-curve: cubic-bezier(0.6, -0.05, 0.01, 0.99);
+
+@mixin rectangle($width, $height, $color) {
+	background-color: $color;
+	width: $width;
+	height: $height;
+}
