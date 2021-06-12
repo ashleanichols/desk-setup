@@ -1,5 +1,6 @@
 @import "variables";
-@import "./mixins/retrowave.scss";
+@import "./mixins/retrowave";
+@import "./mixins/toggle";
 
 body {
     margin: 0;

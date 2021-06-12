@@ -1,0 +1,43 @@
+.retrowave__toggle {
+	z-index: 2;
+	position: absolute;
+	top: 30px;
+	right: 30px;
+	width: 60px;
+	height: 60px;
+	background-color: #0ac;
+	background-image: linear-gradient(0deg,
+			#fff2 0%,
+			#fff2 25%,
+			#0000 25%,
+			#0000 50%,
+			#fff3 50%,
+			#fff4 75%,
+			#0000 75%);
+	background-size: 0.8rem 0.8rem;
+	border: solid 2px linear-gradient(45deg, #0dd 0%, #00d 100%);
+	border-radius: 50%;
+	box-shadow: 0px 0px 5px #e0e, 0px 0px 10px #00e, 0px 0px 15px #0ee,
+		inset 0px 0px 30px #055, inset 0px 0px 15px #099;
+	cursor: pointer;
+	transition: all 0.3s $bezier-curve;
+}
+
+.retrowave__toggle:hover {
+	box-shadow: 0px 5px 5px #f0f, 0px 0px 1000px #0000, 0px 0px 15px #0ee,
+		inset 0px 0px 30px #055;
+	background-color: #0ce;
+	border: solid 2px #0df;
+	transform-origin: center;
+	transform: scale(0.9);
+}
+
+.retrowave__toggle.active {
+	background-color: unset;
+	background-size: unset;
+	border: none;
+	background-image: linear-gradient(223deg,
+                $gradient-stop-2 0%,
+                $gradient-stop-3 100%);
+	box-shadow: 0 0 10px rgba(0, 0, 0, 30%);
+}
