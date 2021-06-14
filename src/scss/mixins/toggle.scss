@@ -3,8 +3,8 @@
 	position: absolute;
 	top: 30px;
 	right: 30px;
-	width: 60px;
-	height: 60px;
+	width: 45px;
+	height: 45px;
 	background-color: #0ac;
 	background-image: linear-gradient(0deg,
 			#fff2 0%,
@@ -17,17 +17,21 @@
 	background-size: 0.8rem 0.8rem;
 	border: solid 2px linear-gradient(45deg, #0dd 0%, #00d 100%);
 	border-radius: 50%;
-	box-shadow: 0px 0px 5px #e0e, 0px 0px 10px #00e, 0px 0px 15px #0ee,
-		inset 0px 0px 30px #055, inset 0px 0px 15px #099;
+	box-shadow:
+		0px 0px 5px #e0e,
+		0px 0px 10px #00e,
+		0px 0px 15px #0ee,
+		inset 0px 0px 30px #055,
+		inset 0px 0px 15px #099;
 	cursor: pointer;
+	animation: pulse 2s infinite;
 	transition: all 0.3s $bezier-curve;
 }
 
 .retrowave__toggle:hover {
-	box-shadow: 0px 5px 5px #f0f, 0px 0px 1000px #0000, 0px 0px 15px #0ee,
-		inset 0px 0px 30px #055;
+	box-shadow: 0px 0px 10px #f0f, 0px 0px 10px #0000, 0px 0px 15px #0ee, inset 0px 0px 30px #055;
 	background-color: #0ce;
-	border: solid 2px #0df;
+	border: solid 2px #0ac;
 	transform-origin: center;
 	transform: scale(0.9);
 }
@@ -36,8 +40,27 @@
 	background-color: unset;
 	background-size: unset;
 	border: none;
-	background-image: linear-gradient(223deg,
-                $gradient-stop-2 0%,
-                $gradient-stop-3 100%);
+	background-image: linear-gradient(223deg, $gradient-stop-2 0%,
+$gradient-stop-3 100%);
 	box-shadow: 0 0 10px rgba(0, 0, 0, 30%);
+	animation: pulse 2s infinite;
+}
+
+@media (min-width: 600px) {
+	.retrowave__toggle {
+		width: 60px;
+		height: 60px;
+	}	
+}
+
+@keyframes pulse {
+	0% {
+		box-shadow: 0 0 0 0 rgba($gradient-stop-2, 0.8);
+	}
+	70% {
+		box-shadow: 0 0 0 12px rgba($gradient-stop-2, 0.1);
+	}
+	100% {
+		box-shadow: 0 0 0 0 rgba($gradient-stop-2, 0);
+	}
 }
